@@ -34,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void Bounce(float force)
+    {
+        velocity.y = force;
+    }
+
     void Update()
     {
         float currentSpeed = controller.isGrounded
