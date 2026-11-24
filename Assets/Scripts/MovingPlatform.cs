@@ -3,7 +3,7 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
     public Vector3 movementDistance = new Vector3(5, 0, 0);
-    public float speed = 2f;
+    public float speed = 2;
 
     private Vector3 startPosition;
     private Vector3 targetPosition;
@@ -18,7 +18,7 @@ public class MovingPlatform : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(
             transform.position,
-            targetPosition,
+            targetPosition, 
             speed * Time.deltaTime
         );
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Trampoline : MonoBehaviour
 {
-    public float bounceForce = 15f;
+    public float bounceForce = 15;
 
     private void OnTriggerEnter(Collider other)
     {
